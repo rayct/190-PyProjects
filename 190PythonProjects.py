@@ -197,4 +197,24 @@
 # print("Borders With : ",country.borders())
 # print("Other nmaes : ",country.alt_spellings())
 
+
+
+
+# 13 Image Captcha Generator
+# from captcha.image import ImageCaptcha
+# Specify the image size
+# image = ImageCaptcha(width = 300, height = 100)
+# Specify the Text for captcha
+# captcha_text = input("Enter Captcha Text : ")
+#  Generate the image of the given text
+# data = image.generate(captcha_text)
+# Write the image on the given file and save it
+# image.write(captcha_text, 'CAPTCHA1.png') 
+# from PIL import Image
+# Image.open('CAPTCHA1.png')
+
+
+
+
+# 14 
 #rayturner.dev
