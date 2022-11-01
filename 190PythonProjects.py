@@ -216,5 +216,51 @@
 
 
 
-# 14 
+# 14 Generate Text using Python
+# from transformers import pipeline
+# model = pipeline("text-generation", model = "gpt2")
+
+# sentence = model("Hi, My name is John Cena, I am here", 
+#                  do_sample=True, top_k=50, 
+#                  temperature=0.9, max_length=100, 
+#                  num_return_sentences=2)
+
+# for i in sentence:
+#   print(i["generated_text"])
+
+
+
+
+
+# 15 Scrape Table from a Website using Python
+import urllib.request
+import pandas as pd
+url = "https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites"
+
+with urllib.request.urlopen(url) as i:
+    html = i.read()
+    
+data = pd.read_html(html)[0]
+print(data.head())
+data.to_csv("programming.csv")
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 #rayturner.dev
