@@ -183,3 +183,18 @@
 # scraper = bs(req.content, "html.parser")
 # profile_picture = scraper.find("img", {"alt": "Avatar"})["src"]
 # print(profile_picture)
+
+
+
+
+# 12 Country Details
+from countryinfo import CountryInfo
+count=input("Enter your Country : ")
+country = CountryInfo(count)
+print("Capital is : ",country.capital())
+print("Currency is : ",country.currencies())
+print("Lanquages is : ",country.languages())
+print("Borders With : ",country.borders())
+print("Other nmaes : ",country.alt_spellings())
+
+#rayturner.dev
