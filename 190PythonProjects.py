@@ -247,21 +247,11 @@
 # File Storage
 import gofile as go
 def Store_Files(file):
-    cur_server = go.getserver()
+    cur_server = go.getServer()
     print(cur_server)
     url = go.uploadFile(file)
-    print("Download Link: ", url["DownloadPage"])
-    Store_Files("new.jpg")
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    print("Download Link: ", url["downloadPage"])
+Store_Files("emma.png")
   
   
   
