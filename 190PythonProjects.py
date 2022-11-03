@@ -245,20 +245,52 @@
 
 # 16 Cloud File Sharing
 # File Storage
-import gofile as go
-def Store_Files(file):
-    cur_server = go.getServer()
-    print(cur_server)
-    url = go.uploadFile(file)
-    print("Download Link: ", url["downloadPage"])
-Store_Files("emma.png")
-  
-  
-  
-  
-  
-  
-  
-  
-  
+# import gofile as go
+# def Store_Files(file):
+#     cur_server = go.getServer()
+#     print(cur_server)
+#     url = go.uploadFile(file)
+#     print("Download Link: ", url["downloadPage"])
+# Store_Files("emma.png")
+
+
+
+
+# 17 Convert Distance from Kilometers to MPH
+# km * 0.621371
+# km = 84.500
+
+# miles = ( km * 0.621371 )
+
+# print("%.2f Km = %.2f Miles" %(km,miles))
+
+
+
+
+# 18 QR Code Generation
+import pyqrcode
+from PIL import Image
+link = input("Enter anything to generate QR : ")
+qr_code = pyqrcode.create(link)
+qr_code.png("QRCode.png", scale=5)
+Image.open("QRCode.png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #rayturner.dev
